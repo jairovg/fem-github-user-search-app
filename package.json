@@ -1,0 +1,60 @@
+{
+  "name": "fem-github-user-search-app",
+  "version": "0.0.0",
+  "description": "frontendmentor.io challenge github user search app",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
+    "wds": "webpack serve --env development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jairovg/fem-github-user-search-app.git"
+  },
+  "keywords": [
+    "frontendmentor.io",
+    "github",
+    "user",
+    "search",
+    "challenge"
+  ],
+  "author": "jairovg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jairovg/fem-github-user-search-app/issues"
+  },
+  "homepage": "https://github.com/jairovg/fem-github-user-search-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "webpack": "^5.56.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@vue/babel-plugin-jsx": "^1.1.0",
+    "@vue/compiler-sfc": "^3.2.19",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.7",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-webpack": "^0.13.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-vue": "^7.18.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "mini-css-extract-plugin": "^1.6.2",
+    "postcss": "^8.3.8",
+    "postcss-loader": "^4.3.0",
+    "purgecss-webpack-plugin": "^4.0.3",
+    "purify-css": "^1.2.5",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-airbnb": "^0.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0",
+    "vue": "^3.2.19"
+  }
+}
