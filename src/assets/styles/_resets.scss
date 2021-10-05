@@ -1,3 +1,5 @@
+@use "./tokens" as *;
+
 * {
   box-sizing: border-box;
 }
@@ -16,4 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-family: $text-default-font-family;
+  font-weight: $text-default-font-weight;
+  font-size: $text-default-font-size;
+  line-height: $text-default-height;
 }
