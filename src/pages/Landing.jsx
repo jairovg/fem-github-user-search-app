@@ -1,12 +1,12 @@
+import Header from '~/components/Header';
+import DarkModeToggle from '~/components/DarkModeToggle';
 import '~/assets/styles/global.scss';
 
 const App = () => (
-  <div>
-    devfinder
-
-    Light
-    Dark
-
+  <>
+    <Header>
+      <DarkModeToggle />
+    </Header>
     Search GitHub username...
     Search
 
@@ -15,7 +15,7 @@ const App = () => (
     Repos
     Followers
     Following
-  </div>
+  </>
 );
 
 export default App;

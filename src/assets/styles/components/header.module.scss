@@ -1,0 +1,13 @@
+@use "../tokens" as *;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 3.5rem;
+
+  &__title {
+    margin: 0;
+
+    @extend %text-heading-800;
+  }
+}
