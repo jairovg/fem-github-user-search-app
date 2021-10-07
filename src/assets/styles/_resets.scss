@@ -23,3 +23,32 @@ body {
   font-size: $text-default-font-size;
   line-height: $text-default-height;
 }
+
+/* Placeholders for reset */
+%input-reset {
+  appearance: none;
+  border: 0;
+}
+
+%input-text-default {
+  font-family: $text-default-font-family;
+  font-weight: $text-default-font-weight;
+  font-size: $text-input-default-font-size;
+  line-height: $text-input-default-height;
+  height: $text-input-default-height;
+
+  @media screen and (min-width: $sm-device) {
+    font-size: $text-input-md-font-size;
+  }
+}
+
+%button-default {
+  font-size: $text-button-default-font-size;
+  border-radius: 1rem;
+  padding: 1.15rem 1.8rem;
+
+  @media screen and (min-width: $sm-device) {
+    font-size: $text-button-md-font-size;
+    padding: 1.25rem 2.4rem;
+  }
+}

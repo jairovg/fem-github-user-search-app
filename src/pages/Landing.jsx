@@ -1,5 +1,6 @@
 import Header from '~/components/Header';
 import DarkModeToggle from '~/components/DarkModeToggle';
+import SearchInput from '~/components/SearchInput';
 import '~/assets/styles/global.scss';
 
 const App = () => (
@@ -7,8 +8,7 @@ const App = () => (
     <Header>
       <DarkModeToggle />
     </Header>
-    Search GitHub username...
-    Search
+    <SearchInput />
 
     Joined
 

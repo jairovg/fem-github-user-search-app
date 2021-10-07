@@ -5,8 +5,20 @@ $text-default-font-family: "Space Mono", monospace;
 $text-default-font-weight: 400;
 $text-default-font-size: 1.5rem;
 $text-default-height: 2.5rem;
+$text-input-default-font-size: 1.3rem;
+$text-input-md-font-size: 1.8rem;
+$text-input-default-height: 2.5rem;
+$text-button-default-font-size: 1.4rem;
+$text-button-md-font-size: 1.6rem;
 
 /* Placeholders */
+%text-heading-600 {
+  font-family: $text-default-font-family;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
 %text-heading-800 {
   font-family: $text-default-font-family;
   font-weight: 700;
