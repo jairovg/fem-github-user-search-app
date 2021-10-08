@@ -1,4 +1,5 @@
 @use "./tokens" as *;
+@use "./themes/dark"; /* TODO: Move to webpack */
 @use "./resets";
 
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
@@ -6,6 +7,7 @@
 body {
   margin: auto;
   padding: 3.1rem 2.4rem;
+  background-color: var(--color-background-primary);
 
   @media screen and (min-width: $sm-device) {
     padding: 14rem 9.7rem;
