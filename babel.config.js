@@ -9,7 +9,9 @@ module.exports = {
   env: {
     [ ENV_DEV ]: {
       plugins: [pluginJsxVue()],
-      presets: [presetEnv()],
+      presets: [presetEnv({
+        useBuiltIns: 'usage',
+      })],
     },
     test: {
       presets: [getTestConfig()],

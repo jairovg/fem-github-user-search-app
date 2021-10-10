@@ -4,7 +4,8 @@ module.exports = {
   extends: ESLINT_VUE_EXTENDS,
   parser: ESLINT_VUE_PARSER,
   parserOptions: {
-    ecmaVersion: 6,
+    parser: '@babel/eslint-parser',
+    ecmaVersion: 8,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
