@@ -32,11 +32,13 @@
   },
   "dependencies": {
     "@babel/core": "^7.15.5",
+    "@babel/eslint-parser": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@vue/babel-plugin-jsx": "^1.1.0",
     "@vue/compiler-sfc": "^3.2.19",
     "babel-loader": "^8.2.2",
     "classnames": "^2.3.1",
+    "core-js": "^3.18.2",
     "css-loader": "^5.2.7",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
