@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { merge } = require('webpack-merge');
 const { utils, styles, javascript } = require('webpack-lib');
 const { build, src, index } = require('./webpack.constants').PATHS;
@@ -29,6 +30,51 @@ module.exports = merge([
       * values: 'none' | 'errors-only' | 'minimal' | 'normal' | 'verbose'
       */
     stats: 'errors-only',
+    // TODO: Move to webpack-lib
+    module: {
+      rules: [
+        {
+          test: /\.s[ac]ss$/i,
+          oneOf: [
+            {
+              resourceQuery: '?dark',
+              use: [
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                {
+                  loader: 'sass-loader',
+                  options: {
+                    additionalData: `@use './dark';`,
+                  },
+                },
+              ],
+            },
+            {
+              resourceQuery: '?light',
+              use: [
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                {
+                  loader: 'sass-loader',
+                  options: {
+                    additionalData: `@use './light';`,
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    plugins: [
+      new MiniCssExtractPlugin({
+        // TODO: Handle hash and sourcemaps depending on the mode
+        filename: '[name].css',
+        attributes: {
+          id: 'theme',
+        },
+      }),
+    ],
   },
   utils.htmlPlugin({
     title: 'Frontend Mentor | GitHub user search app',

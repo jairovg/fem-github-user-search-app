@@ -4,6 +4,6 @@ const { merge } = require('webpack-merge');
 module.exports = merge([
   { devtool: 'eval-source-map' },
   images.loadImages(),
-  styles.loadSASS(),
+  styles.loadSASS({ exclude: /themes/ }),
   utils.webpackDevServer(),
 ]);

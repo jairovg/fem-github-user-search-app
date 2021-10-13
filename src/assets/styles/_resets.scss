@@ -22,6 +22,7 @@ body {
   font-weight: $text-default-font-weight;
   font-size: $text-default-font-size;
   line-height: $text-default-height;
+  color: var(--color-text-body-default);
 }
 
 /* Placeholders for reset */

@@ -1,0 +1,43 @@
+@use "../tokens" as *;
+
+.mode {
+  $mode: &;
+  display: grid;
+
+  &__label {
+    $label: &;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-weight: 700;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color-text-link-default);
+
+    @extend %text-heading-500;
+
+    &:hover {
+      color: var(--color-text-link-secondary-hover);
+
+      /* stylelint-disable max-nesting-depth */
+      #{$mode}__icon {
+        fill: var(--color-text-link-secondary-hover);
+      }
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1.6rem;
+    fill: var(--color-text-link-default);
+  }
+}
+
