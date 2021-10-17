@@ -4,6 +4,7 @@ $md-device: 1024px;
 $text-default-font-family: "Space Mono", monospace;
 $text-default-font-weight: 400;
 $text-default-font-size: 1.3rem;
+$text-default-font-size-sm: 1.5rem;
 $text-default-height: 2.5rem;
 $text-input-default-font-size: 1.3rem;
 $text-input-md-font-size: 1.8rem;
@@ -56,7 +57,7 @@ $text-button-md-font-size: 1.6rem;
   font-family: $text-default-font-family;
   font-weight: 700;
   font-size: 2.6rem;
-  line-height: 3.8rem;
+  line-height: 3.851rem;
   color: var(--color-text-heading-800);
 }
 

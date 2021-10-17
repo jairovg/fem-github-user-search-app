@@ -23,6 +23,10 @@ body {
   font-size: $text-default-font-size;
   line-height: $text-default-height;
   color: var(--color-text-body-default);
+
+  @media screen and (min-width: $sm-device) {
+    font-size: $text-default-font-size-sm;
+  }
 }
 
 ul {

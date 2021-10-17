@@ -51,9 +51,5 @@
     @extend %text-heading-600;
     @extend %input-reset;
     @extend %button-default;
-
-    &:focus-within {
-      box-shadow: none;
-    }
   }
 }

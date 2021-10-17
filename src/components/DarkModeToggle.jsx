@@ -60,7 +60,7 @@ const DarkMode = {
           <svg
             class={ classnames(d.mode__icon) }
           >
-            { mode.value === 'dark' ? moon : sun }
+            { mode.value === 'dark' ? sun : moon }
           </svg>
         </label>
       </form>

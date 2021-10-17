@@ -25,6 +25,13 @@
         fill: var(--color-text-link-secondary-hover);
       }
     }
+
+    &:active,
+    &:focus-within {
+      box-shadow: var(--color-box-shadow-focus-default);
+      padding: .5rem;
+      margin: -.5rem;
+    }
   }
 
   &__checkbox {
