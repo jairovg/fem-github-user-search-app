@@ -1,0 +1,211 @@
+@use "../tokens" as *;
+
+.info {
+  $disabled: &;
+  margin-top: 1.6rem;
+  padding: 3.2rem 2.4rem 4.8rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-background-secondary);
+  box-shadow: var(--color-box-shadow-input-default);
+
+  @media screen and (min-width: $sm-device) {
+    padding: 4rem;
+  }
+
+  @media screen and (min-width: $md-device) {
+    padding: 4.8rem;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: center;
+
+    @media screen and (min-width: $md-device) {
+      grid-template-columns: auto 1fr auto;
+      grid-template-rows: 6.221rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__avatar {
+    display: inline-block;
+    grid-row: 1 / span 2;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin-right: 1.95rem;
+
+    @media screen and (min-width: $sm-device) {
+      width: 11.7rem;
+      height: 11.7rem;
+      margin-right: 4.1rem;
+    }
+
+    @media screen and (min-width: $md-device) {
+      grid-row: auto;
+    }
+  }
+
+  &__name {
+    display: grid;
+    align-content: center;
+    font-weight: 700;
+    margin: 0;
+
+    @extend %text-heading-700;
+    @extend %text-heading-700-sm;
+  }
+
+  &__username {
+    color: var(--color-text-input-caret);
+
+    @extend %text-heading-500;
+    @extend %text-heading-500-sm;
+  }
+
+  &__date {
+
+    @extend %text-heading-500;
+
+    @media screen and (min-width: $sm-device) {
+      font-size: 1.5rem;
+      line-height: 2.222rem;
+    }
+  }
+
+  &__bio {
+    margin-top: 3.3rem;
+    margin-bottom: 2.3rem;
+
+    @media screen and (min-width: $sm-device) {
+      margin-top: 2.4rem;
+      margin-bottom: 3.2rem;
+    }
+
+    @media screen and (min-width: $md-device) {
+      margin-top: 2rem;
+      margin-left: 15.8rem;
+    }
+  }
+
+  &__stats-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    padding: 1.8rem 1.4rem 1.9rem 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-background-primary);
+
+    @media screen and (min-width: $sm-device) {
+      justify-items: start;
+      padding: 1.5rem 3.2rem 1.7rem;
+    }
+
+    @media screen and (min-width: $md-device) {
+      margin-left: 15.8rem;
+    }
+  }
+
+  &__stats-info {
+    font-size: 1.1rem;
+
+    @extend %text-heading-500;
+  }
+
+  &__stats-counter {
+    margin: 0;
+
+    @extend %text-heading-700;
+
+    @media screen and (min-width: $sm-device) {
+      font-size: 2.2rem;
+      line-height: 3.258rem;
+    }
+  }
+
+  &__links {
+
+    @media screen and (min-width: $sm-device) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-auto-flow: column;
+    }
+
+    @media screen and (min-width: $md-device) {
+      margin-left: 15.8rem;
+    }
+  }
+
+  &__link-item {
+    line-height: 1.9rem;
+    padding-left: 3.3rem;
+
+    &--disabled {
+      $disabled: &;
+      color: var(--color-link-default-disabled);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text-body-default);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active,
+    &:visited {
+      font-weight: 700;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 1.6rem;
+
+    @media screen and (min-width: $sm-device) {
+      margin-top: 1.9rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: " ";
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2rem;
+      height: 2rem;
+      mask-position: left center;
+      mask-repeat: no-repeat;
+      background-color: var(--color-icon-fill);
+    }
+
+    &#{$disabled}::before {
+      background-color: var(--color-link-default-disabled);
+    }
+
+    &-location::before {
+      mask-image: url("~/assets/icon-location.svg");
+    }
+
+    &-website::before {
+      mask-image: url("~/assets/icon-website.svg");
+    }
+
+    &-twitter::before {
+      mask-image: url("~/assets/icon-twitter.svg");
+    }
+
+    &-company::before {
+      mask-image: url("~/assets/icon-company.svg");
+    }
+  }
+}
+

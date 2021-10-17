@@ -8,12 +8,18 @@
   --color-box-shadow-button-focus-default: inset 0 0 0 .3rem rgb(0, 121, 255), 0 .2rem .2rem 0 rgb(12 11 8 / 20%);
   --color-box-shadow-button-active-default: inset 0 0 0 .3rem rgb(0, 121, 255), inset 0 0 0 .5rem rgb(254, 254, 254);
 
+  --color-icon-fill: rgb(255, 255, 255);
+
+  --color-link-default-disabled: rgba(255, 255, 255, .5);
+
   --color-text-button-primary: rgb(255, 255, 255);
   --color-text-button-primary-hover: rgb(255, 255, 255);
   --color-background-button-primary: rgb(0, 121, 255);
   --color-background-button-primary-hover: rgb(96, 171, 255);
 
   --color-text-body-default: rgb(255, 255, 255);
+  --color-text-heading-500: rgb(255, 255, 255);
+  --color-text-heading-700: rgb(255, 255, 255);
   --color-text-heading-800: rgb(255, 255, 255);
   --color-text-link-default: rgb(255, 255, 255);
   --color-text-link-secondary-hover: rgb(144, 164, 212);

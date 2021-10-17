@@ -2,6 +2,7 @@ import { onMounted, reactive } from 'vue';
 import Header from '~/components/Header';
 import DarkModeToggle from '~/components/DarkModeToggle';
 import SearchInput from '~/components/SearchInput';
+import UserInfo from '~/components/UserInfo';
 import getAUser from '~/api/github';
 import '~/assets/styles/global.scss';
 
@@ -46,6 +47,9 @@ const Landing = {
         </Header>
         <SearchInput
           onSubmit={ searchUser }
+        />
+        <UserInfo
+          user={user}
         />
       </>
     );
