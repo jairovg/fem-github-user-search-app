@@ -22,10 +22,10 @@ const DarkMode = {
     const mode = ref(props.mode);
     const modeText = computed(() => {
       if (mode.value === 'dark') {
-        return 'Dark';
+        return 'Light';
       }
 
-      return 'Light';
+      return 'Dark';
     });
 
     const toggleMode = async () => {
