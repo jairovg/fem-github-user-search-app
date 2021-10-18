@@ -5,6 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "serve": "serve dist",
+    "build": "webpack --env production",
     "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
     "wds": "webpack serve --env development"
   },

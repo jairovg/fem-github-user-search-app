@@ -1,5 +1,5 @@
 const { getTestConfig, pluginJsxVue, presetEnv } = require('webpack-lib').babel;
-const { ENV_DEV } = require('webpack-lib').constants;
+const { ENV_DEV, ENV_PROD } = require('webpack-lib').constants;
 
 /**
  * Setup babel based on environment
@@ -10,6 +10,13 @@ module.exports = {
     [ ENV_DEV ]: {
       plugins: [pluginJsxVue()],
       presets: [presetEnv({
+        useBuiltIns: 'usage',
+      })],
+    },
+    [ ENV_PROD ]: {
+      plugins: [pluginJsxVue()],
+      presets: [presetEnv({
+        env: ENV_PROD,
         useBuiltIns: 'usage',
       })],
     },

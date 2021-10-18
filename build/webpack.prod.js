@@ -9,12 +9,13 @@ const urlLoaderOpts = { limit: 6000, name: '[name].[ext]' };
 
 module.exports = ({ paths }) => merge([
   {
+    devtool: 'hidden-source-map',
     output: {
       path: build,
-      filename: '[name]_[hash].js',
+      filename: '[name]_[contenthash].js',
     },
   },
   images.loadImages({ urlLoaderOpts, imgWpLoaderOpts }),
-  styles.extractSASS({ filename: '[name]_[hash].css' }),
-  styles.purgeCSS({ paths: glob.sync(`${paths}/**/*.{html,vue,jsx}`, { nodir: true }) }),
+  styles.extractSASS({ filename: '[name]_[contenthash].css', exclude: /themes/, attributes: { id: 'theme' } }),
+  // styles.purgeCSS({ paths: glob.sync(`${paths}/**/*.{html,vue,jsx}`, { nodir: true }) }),
 ]);
