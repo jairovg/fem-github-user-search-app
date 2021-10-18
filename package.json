@@ -47,6 +47,7 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-vue": "^7.18.0",
     "eslint-webpack-plugin": "^2.5.4",
+    "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^1.6.2",
     "postcss": "^8.3.8",
     "postcss-loader": "^4.3.0",
