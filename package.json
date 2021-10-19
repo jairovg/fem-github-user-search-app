@@ -5,7 +5,8 @@
   "main": ".eslintrc.js",
   "scripts": {
     "serve": "serve dist",
-    "build": "webpack --env production",
+    "build": "npm run clean && webpack --env production",
+    "clean": "rimraf dist",
     "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
     "wds": "webpack serve --env development"
   },
@@ -27,24 +28,13 @@
   },
   "homepage": "https://github.com/jairovg/fem-github-user-search-app#readme",
   "devDependencies": {
-    "nodemon": "^2.0.13",
-    "serve": "^12.0.1",
-    "webpack": "^5.56.0",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0",
-    "webpack-lib": "npm:@jairovg/webpack-lib@^1.0.0-2"
-  },
-  "dependencies": {
     "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@vue/babel-plugin-jsx": "^1.1.0",
     "@vue/compiler-sfc": "^3.2.19",
     "babel-loader": "^8.2.2",
-    "classnames": "^2.3.1",
-    "core-js": "^3.18.2",
     "css-loader": "^5.2.7",
-    "date-fns": "^2.25.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-webpack": "^0.13.1",
@@ -53,18 +43,30 @@
     "eslint-webpack-plugin": "^2.5.4",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^1.6.2",
+    "nodemon": "^2.0.13",
     "postcss": "^8.3.8",
     "postcss-loader": "^4.3.0",
     "purgecss-webpack-plugin": "^4.0.3",
     "purify-css": "^1.2.5",
+    "rimraf": "^3.0.2",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
+    "serve": "^12.0.1",
     "style-loader": "^2.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-airbnb": "^0.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.21.0",
     "url-loader": "^4.1.1",
+    "webpack": "^5.56.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0",
+    "webpack-lib": "npm:@jairovg/webpack-lib@^1.0.0-2"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "core-js": "^3.18.2",
+    "date-fns": "^2.25.0",
     "vue": "^3.2.19"
   }
 }
