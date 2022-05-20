@@ -32,7 +32,7 @@ module.exports = merge([
     stats: 'normal',
   },
   utils.htmlPlugin({
-    title: 'Frontend Mentor | GitHub user search app',
+    title: 'GitHub user search app | Frontend Mentor',
     meta,
     template: index,
   }),
