@@ -36,8 +36,9 @@
 
   &__checkbox {
     position: absolute;
-    opacity: 0;
     z-index: -1;
+    height: 0;
+    width: 0;
   }
 
   &__icon {
