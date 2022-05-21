@@ -52,13 +52,17 @@ const DarkMode = {
             id="mode"
             type="checkbox"
             name="mode"
+            aria-label={`Change to ${modeText.value} mode`}
             class={ classnames(d.mode__checkbox) }
             value={ mode.value }
             onClick={ toggleMode }
           />
-          { modeText.value }
+          <span aria-hidden="true">
+            { modeText.value }
+          </span>
           <svg
             class={ classnames(d.mode__icon) }
+            aria-hidden="true"
           >
             { mode.value === 'dark' ? sun : moon }
           </svg>
