@@ -29,7 +29,7 @@ const Search = defineComponent({
       >
         <input
           id="search-user"
-          type="text"
+          type="search"
           name="username"
           class={ classnames(s.search__input) }
           placeholder={ placeholder.value }
