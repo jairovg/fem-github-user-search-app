@@ -15,12 +15,12 @@ export const loadTheme = async (theme) => {
   }
 
   if (theme === 'dark') {
-    await import(/* webpackChunkName: "dark" */ '~/assets/styles/themes/index.scss?dark');
+    await import(/* webpackChunkName: "dark" */ '@/assets/styles/themes/index.scss?dark');
     themes[theme] = document.querySelector('#theme');
     return theme;
   }
 
-  await import(/* webpackChunkName: "light" */ '~/assets/styles/themes/index.scss?light');
+  await import(/* webpackChunkName: "light" */ '@/assets/styles/themes/index.scss?light');
   themes[theme] = document.querySelector('#theme');
   return theme;
 };

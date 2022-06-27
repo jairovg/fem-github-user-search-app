@@ -1,6 +1,6 @@
 import { defineComponent, ref } from 'vue';
 import classnames from 'classnames';
-import s from '~/assets/styles/components/search-input.module.scss';
+import s from '@/assets/styles/components/search-input.module.scss';
 
 const Search = defineComponent({
   name: 'SearchInput',

@@ -199,19 +199,19 @@
     }
 
     &-location::before {
-      mask-image: url("~/assets/icons/icon-location.svg");
+      mask-image: url("@/assets/icons/icon-location.svg");
     }
 
     &-website::before {
-      mask-image: url("~/assets/icons/icon-website.svg");
+      mask-image: url("@/assets/icons/icon-website.svg");
     }
 
     &-twitter::before {
-      mask-image: url("~/assets/icons/icon-twitter.svg");
+      mask-image: url("@/assets/icons/icon-twitter.svg");
     }
 
     &-company::before {
-      mask-image: url("~/assets/icons/icon-company.svg");
+      mask-image: url("@/assets/icons/icon-company.svg");
     }
   }
 }
