@@ -1,3 +1,5 @@
+const STYLELINT_EXTENDS = require('webpack-lib').stylelint.STYLELINT_EXTENDS_SCSS;
+
 module.exports = {
-  extends: 'stylelint-config-standard-scss',
+  extends: STYLELINT_EXTENDS,
 };
