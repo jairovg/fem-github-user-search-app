@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import h from '~/assets/styles/components/header.module.scss';
+import h from '@/assets/styles/components/header.module.scss';
 
 const Header = (props, { slots }) => (
   <header class={ classnames(h.header) }>

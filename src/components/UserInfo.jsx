@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import u from '~/assets/styles/components/user-info.module.scss';
+import u from '@/assets/styles/components/user-info.module.scss';
 
 const NOT_AVAILABLE = 'Not available';
 

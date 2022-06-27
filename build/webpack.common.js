@@ -21,7 +21,7 @@ module.exports = merge([
     },
     resolve: {
       alias: {
-        '~': src,
+        '@': src,
       },
       extensions: ['*', '.js', '.jsx'],
     },

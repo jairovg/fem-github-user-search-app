@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { onMounted, ref, computed } from 'vue';
-import { init, loadTheme } from '~/utils/dark-mode';
-import d from '~/assets/styles/components/dark-mode.module.scss';
+import { init, loadTheme } from '@/utils/dark-mode';
+import d from '@/assets/styles/components/dark-mode.module.scss';
 
 const DarkMode = {
   name: 'DarkMode',
