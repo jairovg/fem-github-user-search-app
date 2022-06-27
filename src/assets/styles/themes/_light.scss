@@ -2,12 +2,12 @@
 :root {
   --color-background-primary: rgb(246 248 255);
   --color-background-secondary: rgb(254 254 254);
-  --color-box-shadow-input-default: 0 16px 30px -10px rgba(70 96 187 19.8567%);
+  --color-box-shadow-input-default: 0 16px 30px -10px rgb(70 96 187 / 19.8567%);
   --color-box-shadow-focus-default: inset 0 0 0 .2rem rgb(20 29 47), 0 .2rem .2rem 0 rgb(12 11 8 / 20%);
   --color-box-shadow-button-focus-default: inset 0 0 0 .3rem rgb(0 121 255), 0 .2rem .2rem 0 rgb(12 11 8 / 20%);
   --color-box-shadow-button-active-default: inset 0 0 0 .3rem rgb(0 121 255), inset 0 0 0 .5rem rgb(254 254 254);
   --color-icon-fill: rgb(75 106 155);
-  --color-link-default-disabled: rgba(75 106 155 50%);
+  --color-link-default-disabled: rgb(75 106 155 / 50%);
   --color-text-button-primary: rgb(255 255 255);
   --color-text-button-primary-hover: rgb(255 255 255);
   --color-background-button-primary: rgb(0 121 255);
